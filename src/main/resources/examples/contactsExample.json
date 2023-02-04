@@ -1,0 +1,30 @@
+[
+ {
+  "contactId": "38484349394930403484",
+  "firstName": "Oneil",
+  "lastName": "Cruz",
+  "company": "Pittsburgh Pirates",
+  "phone": "+1-334-435-3224",
+  "email": "oneil.cruz@pirates.com",
+  "address": "3110 Andrew McCutchen Drive",
+  "title": "Shortstop",
+  "city": "Pittsburgh",
+  "state": "PA",
+  "country": "USA",
+  "postalCode": "15106"
+ },
+ {
+  "contactId": "22923323323494930434",
+  "firstName": "Roansy",
+  "lastName": "Contreras",
+  "company": "Pittsburgh Pirates",
+  "phone": "+1-813-5453-0133",
+  "email": "roansy.contreras@pirates.com",
+  "address": "339 Andrew McCutchen Drive",
+  "title": "Starting Pitcher",
+  "city": "Pittsburgh",
+  "state": "PA",
+  "country": "USA",
+  "postalCode": "15106"
+ }
+]

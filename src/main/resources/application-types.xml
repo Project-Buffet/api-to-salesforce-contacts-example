@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<types:mule xmlns:types="http://www.mulesoft.org/schema/mule/types">
+  <types:catalog>
+    <types:type name="contactExample" format="json">
+      <types:shape format="weave" example="examples/contactsExample.json"><![CDATA[%dw 2.0
+
+type contactExample = Array<{|  contactId: String,   firstName: String,   lastName: String,   company: String,   phone: String,   email: String,   address: String,   title: String,   city: String,   state: String,   country: String,   postalCode: String|}> {"example": "[{\\\"contactId\\\":\\\"38484349394930403484\\\",\\\"firstName\\\":\\\"Oneil\\\",\\\"lastName\\\":\\\"Cruz\\\",\\\"company\\\":\\\"Pittsburgh Pirates\\\",\\\"phone\\\":\\\"+1-334-435-3224\\\",\\\"email\\\":\\\"oneil.cruz@pirates.com\\\",\\\"address\\\":\\\"3110 Andrew McCutchen Drive\\\",\\\"title\\\":\\\"Shortstop\\\",\\\"city\\\":\\\"Pittsburgh\\\",\\\"state\\\":\\\"PA\\\",\\\"country\\\":\\\"USA\\\",\\\"postalCode\\\":\\\"15106\\\"},{\\\"contactId\\\":\\\"22923323323494930434\\\",\\\"firstName\\\":\\\"Roansy\\\",\\\"lastName\\\":\\\"Contreras\\\",\\\"company\\\":\\\"Pittsburgh Pirates\\\",\\\"phone\\\":\\\"+1-813-5453-0133\\\",\\\"email\\\":\\\"roansy.contreras@pirates.com\\\",\\\"address\\\":\\\"339 Andrew McCutchen Drive\\\",\\\"title\\\":\\\"Starting Pitcher\\\",\\\"city\\\":\\\"Pittsburgh\\\",\\\"state\\\":\\\"PA\\\",\\\"country\\\":\\\"USA\\\",\\\"postalCode\\\":\\\"15106\\\"}]"}
+
+]]></types:shape>
+    </types:type>
+  </types:catalog>
+  <types:enrichment select="#ddc02212-c032-4c2c-ac81-3702abddcf18">
+    <types:processor-declaration>
+      <types:input-event>
+        <types:message>
+          <types:payload type="contactExample"/>
+        </types:message>
+      </types:input-event>
+    </types:processor-declaration>
+  </types:enrichment>
+</types:mule>
